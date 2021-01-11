@@ -24,7 +24,7 @@ function clickHandler(){
     // calling server for processing 
     fetch(getTranslationURL(text))
     .then(response => response.json())
-    .then(json => console.log(json))
+    .then(json => console.log(json.contents.translated))
 };
 
 btnTranslate.addEventListener("click", clickHandler)
