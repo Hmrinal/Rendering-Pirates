@@ -18,7 +18,10 @@ function getTranslationURL(text){
 function clickHandler(){
     //console.log("clicked!!");
     //console.log("input",txtInput.value);
-    outputDiv.innerText = "Hi! How you Doin " + txtInput.value ;
+    //outputDiv.innerText = "Hi! How you Doin " + txtInput.value ;
+    var inputText = txtInput.value ; //taking input
+
+    // calling server for processing 
 };
 
 btnTranslate.addEventListener("click", clickHandler)
