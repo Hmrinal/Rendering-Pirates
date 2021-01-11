@@ -22,6 +22,9 @@ function clickHandler(){
     var inputText = txtInput.value ; //taking input
 
     // calling server for processing 
+    fetch(getTranslationURL(text))
+    .then(response => response.json())
+    .then(json => console.log(json))
 };
 
 btnTranslate.addEventListener("click", clickHandler)
