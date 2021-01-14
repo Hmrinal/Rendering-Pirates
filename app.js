@@ -15,6 +15,11 @@ function getTranslationURL(text){
     return serverURL + "?" + "text= " + text 
 }
 
+function errorHandler(error){
+    console.log("error occured ",error);
+    alert("something went wrong with server! Try again later ...")
+}
+
 function clickHandler(){
     //console.log("clicked!!");
     //console.log("input",txtInput.value);
