@@ -30,6 +30,7 @@ function clickHandler(){
     fetch(getTranslationURL(text))
     .then(response => response.json())
     .then(json => console.log(json.contents.translated))
+    .catch(errorHandler) 
 };
 
 btnTranslate.addEventListener("click", clickHandler)
